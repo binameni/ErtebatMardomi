@@ -1,0 +1,135 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IranSans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+    color: #333;
+}
+
+.book {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.heading span {
+    color: #ff6347;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-new {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-img {
+    height: 300px;
+    background: url("img/header_background.png");
+    background-size: cover;
+}
+
+.form-actual {
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-title h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 0.5rem;
+}
+
+.form-lower {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-sm-6 {
+    width: 48%;
+}
+
+.input-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-box:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .col-sm-6 {
+        width: 100%;
+    }
+}

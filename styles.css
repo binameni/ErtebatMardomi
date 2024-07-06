@@ -1,0 +1,163 @@
+
+body {
+    font-family: 'IranSans', sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: #003366;
+    background-image: url("img/header_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    font-family: 'IranSans', sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+.header-container {
+    background-color: rgba(52, 50, 50, 1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+    height: 85px;
+    box-shadow:.5rem 1rem 8px rgba(0, 0, 0, 0.25);
+
+
+
+}
+
+
+.iran-logo {
+    height: 70px;
+
+}
+
+.Islamic_Parliament_of_Iran_Seal {
+    position: absolute;
+    right: 47%;
+    bottom: -50px;
+    height: 100px;
+    width: 100px;
+
+
+
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    right: 47%;
+
+
+}
+
+nav ul li {
+
+    margin: 0 30px;
+
+}
+
+nav ul li a {
+    font-family: 'IranSans', sans-serif;
+    font-size: 14px;
+    color: white;
+    text-decoration:none;
+    text-align: right;
+
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    background-color: #555; /* رنگ دکمه جستجو */
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.news {
+
+    padding: 80px;
+    margin-top: 50px; /* تنظیم فاصله از هدر به دلیل افزودن نوک مدادی */
+}
+
+.news h2 {
+    color: white;
+}
+
+.news article {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.news article h3 {
+    margin: 0;
+}
+
+.news article p {
+    margin: 10px 0;
+}
+
+.news article a {
+    color: #003366; /* آبی پررنگ */
+    text-decoration: none;
+}
+
+.footer-container {
+    background-color: #003366; /* آبی پررنگ */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-top: .1rem solid darkgrey;
+}
+
+.footer .credit span{
+    color:darkblue;
+}
