@@ -43,7 +43,7 @@ body {
     align-items: center;
 }
 
-.form-new {
+.-new {
     width: 100%;
     max-width: 700px;
     display: flex;
@@ -55,7 +55,7 @@ body {
 }
 
 .form-img {
-    height: 300px;
+    height: 400px;
     background: url("img/header_background.png");
     background-size: cover;
 }
@@ -64,6 +64,9 @@ body {
     padding: 20px;
 }
 
+h3{
+    text-align: center;
+}
 .section-title {
     text-align: center;
     margin-bottom: 10px;
@@ -97,7 +100,7 @@ body {
 }
 
 .input-box {
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
