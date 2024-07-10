@@ -57,11 +57,15 @@ body {
 .form-img {
     height: 400px;
     background: url("img/header_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+
 }
 
 .form-actual {
-    padding: 20px;
+    padding: 10px;
+    position: center;
 }
 
 h3{
@@ -77,6 +81,7 @@ h3{
     color: #333;
 }
 
+
 .mb-4 {
     margin-bottom: 1rem;
 }
@@ -88,7 +93,8 @@ h3{
 .form-lower {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 11px;
+    position: center;
 }
 
 .col-12 {
@@ -96,7 +102,7 @@ h3{
 }
 
 .col-sm-6 {
-    width: 48%;
+    width: 47.5%;
 }
 
 .input-box {
@@ -115,16 +121,17 @@ h3{
 }
 
 .btn-submit {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    background: #007bff;
+
+    width: 96%;
+    padding:10px;
+    background-color: #007bff;
     border: none;
     border-radius: 5px;
-    color: #fff;
-    font-size: 1rem;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
+
 }
 
 .btn-submit:hover {
