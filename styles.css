@@ -1,4 +1,3 @@
-
 body {
     font-family: 'IranSans', sans-serif;
     direction: rtl;
@@ -13,66 +12,75 @@ body {
 *{
     font-family: 'IranSans', sans-serif;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-transform: capitalize;
     transition: all .2s ease-out;
     text-decoration: none;
 }
 .header-container {
-    background-color: rgba(52, 50, 50, 1);
+    background-color: rgba(52, 50, 50, 0.9); /* Semi-transparent background */
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 40px; /* Increased padding */
     position: relative;
-    height: 85px;
-    box-shadow:.5rem 1rem 8px rgba(0, 0, 0, 0.25);
-
+    height: 100px; /* Increased height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .90); /* Enhanced shadow */
 
 
 }
 
-
 .iran-logo {
-    height: 70px;
-
+    height: 80px; /* Slightly larger logo */
 }
 
 .Islamic_Parliament_of_Iran_Seal {
     position: absolute;
-    right: 47%;
+    right: 50%;
     bottom: -50px;
-    height: 100px;
-    width: 100px;
-
-
-
-
+    height: 120px; /* Larger seal */
+    width: 120px;
+    transform: translateX(50%); /* Center the seal */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin: 10px;
-    padding: 10px;
-    right: 47%;
-
-
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 nav ul li {
-
-    margin: 0 30px;
-
+    margin: 0 20px; /* Reduced margin for better spacing */
 }
 
 nav ul li a {
     font-family: 'IranSans', sans-serif;
-    font-size: 14px;
+    font-size: 16px; /* Slightly larger font */
     color: white;
-    text-decoration:none;
+    text-decoration: none;
     text-align: right;
+    position: relative;
+    padding-bottom: 5px;
+}
 
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    right: 0;
+    background: #FFD700; /* Golden underline */
+    transition: width .3s;
+    bottom: 0;
+}
+
+nav ul li a:hover::after {
+    width: 10%; /* Full-width underline on hover */
 }
 
 .search-container {
@@ -81,35 +89,58 @@ nav ul li a {
 }
 
 .search-container input[type="text"] {
-    padding: 5px;
+    padding: 10px; /* Larger padding */
     border: none;
-    border-radius: 5px;
-    margin-left: 5px;
+    border-radius: 20px; /* More rounded corners */
+    margin-left: 10px; /* Increased margin */
+    width: 200px; /* Wider input field */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    color: white;
+    transition: background .3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .75)
+}
+
+.search-container input[type="text"]::placeholder {
+    color: white;
+}
+
+.search-container input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.5); /* Brighter background on focus */
 }
 
 .search-container button {
-    padding: 5px 10px;
-    background-color: #555; /* رنگ دکمه جستجو */
+    padding: 10px 20px; /* Increased padding */
+    background-color: #FFD700; /* Golden button */
     border: none;
-    border-radius: 5px;
-    color: white;
+    border-radius: 20px; /* More rounded corners */
+    color: #003366; /* Dark text color */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .75)
+}
+
+.search-container button:hover {
+    background-color: #ffcc00; /* Brighter on hover */
 }
 
 .news {
 
-    padding: 80px;
+    padding: 200px;
     margin-top: 50px; /* تنظیم فاصله از هدر به دلیل افزودن نوک مدادی */
 }
 
 .news h2 {
     color: white;
+    font-family: 'IranSans', sans-serif;
 }
 
 .news article {
     background-color: white;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 40px;
+    padding: 30px;
     border-radius: 5px;
+    font-family: 'IranSans', sans-serif;
 }
 
 .news article h3 {
@@ -125,39 +156,120 @@ nav ul li a {
     text-decoration: none;
 }
 
-.footer-container {
-    background-color: #003366; /* آبی پررنگ */
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+.footer-container {
+    background: linear-gradient(135deg, #003366 0%, #004080 50%, #0059b3 100%);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
+    padding: 10px 0;
 }
 
 footer ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
-.credit{
-    padding: 1rem;
-    padding-top: 2rem;
-    margin-top: 2rem;
+footer ul li a:hover {
+    color: #ffcc00; /* زرد طلایی */
+    border-bottom: 2px solid #ffcc00;
+}
+
+.credit {
+    padding: 20px 0;
+    margin-top: 20px;
     text-align: center;
-    font-size: 1.5rem;
-    border-top: .1rem solid darkgrey;
+    font-size: 1rem;
+    border-top: 1px solid #bbb;
+    position: relative;
 }
 
-.footer .credit span{
-    color:darkblue;
+.credit p {
+    margin: 0;
+    font-size: 1rem;
 }
+
+.credit span {
+    color: #ffcc00; /* زرد طلایی */
+    font-weight: bold;
+}
+
+.footer-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ffcc00, #ff6600, #ffcc00);
+    animation: gradient-animation 3s infinite linear;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 20px 10px;
+    }
+
+    footer ul li a {
+        font-size: 1rem;
+    }
+
+    .credit {
+        font-size: 0.9rem;
+    }
+}
+
