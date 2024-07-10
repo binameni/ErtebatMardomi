@@ -75,12 +75,12 @@ nav ul li a::after {
     margin: auto;
     right: 0;
     background: #FFD700; /* Golden underline */
-    transition: width .3s;
+    transition: width .1s;
     bottom: 0;
 }
 
 nav ul li a:hover::after {
-    width: 10%; /* Full-width underline on hover */
+    width: 100%; /* Full-width underline on hover */
 }
 
 .search-container {
@@ -212,7 +212,7 @@ footer ul li a:hover {
 
 .credit {
     padding: 20px 0;
-    margin-top: 20px;
+    margin-top: 80px;
     text-align: center;
     font-size: 1rem;
     border-top: 1px solid #bbb;
